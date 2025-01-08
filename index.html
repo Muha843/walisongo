@@ -213,11 +213,6 @@ function cariBarangDenganBarcode() {
         document.getElementById('jumlah-beli').focus(); // Pindahkan fokus ke kolom jumlah
         document.getElementById('cari-barcode').value = ''; // Kosongkan input barcode
     } 
-    // Jika barcode tidak ditemukan
-    else if (barcode) {
-        alert("Barang dengan barcode tersebut tidak ditemukan.");
-        document.getElementById('cari-barcode').value = ''; // Kosongkan input barcode
-    }
 }
 function cariBarangTambahStok() {
     const input = document.getElementById('cari-barang-stok').value.trim().toLowerCase();
